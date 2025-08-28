@@ -1,0 +1,504 @@
+.landscape-content {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding: 0 5%;
+  gap: 20px;
+}
+
+.landscape-content h1 {
+  word-spacing: -5px;
+  color: #000;
+}
+
+.landscape-content .logo {
+  width: 150px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.building div {
+  width: 100%;
+  height: 90%;
+  margin-top: auto;
+  object-fit: contain;
+  background-image: url("../imgs/home_brand.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* about us */
+
+.about-us-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 4%;
+  gap: 10px;
+  width: 80%;
+  min-height: 90vh;
+  margin-right: 5%;
+}
+
+.about-us-content h1 {
+  word-spacing: -5px;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 2.2em;
+  text-align: center;
+}
+
+.about-us-content div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: start;
+  font-size: 1em;
+  gap: 10px;
+}
+
+.about-us-content button {
+  background-color: #000;
+}
+
+/* step-to-step */
+
+#step-to-step-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  padding: 0 4%;
+  gap: 10px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 4% 0;
+}
+
+.our-trajectory-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 4%;
+  gap: 10px;
+  width: 80%;
+  min-height: 90vh;
+  margin-right: 5%;
+}
+
+.our-trajectory-content h1 {
+  word-spacing: -5px;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 2.2em;
+  text-align: center;
+}
+
+.our-trajectory-content div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: start;
+  font-size: 1em;
+  gap: 10px;
+}
+
+/* benefits */
+
+#benefits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 4%;
+  gap: 50px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 4% 0;
+}
+
+#benefits h1 {
+  word-spacing: -5px;
+  color: #000;
+  font-weight: bolder;
+  font-size: 2.2em;
+  text-align: center;
+}
+
+#benefits-carousel-container {
+  width: 80%;
+}
+
+.carousel-item-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#benefits-carousel-container [type="button"] {
+  width: auto;
+}
+
+#benefits-carousel-container [type="button"] .carousel-control-next-icon,
+#benefits-carousel-container [type="button"] .carousel-control-prev-icon {
+  background-color: #000;
+  border-radius: 50%;
+}
+
+#testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 4%;
+  gap: 50px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4% 0;
+}
+
+#testimonials h1 {
+  word-spacing: -5px;
+  font-weight: bolder;
+  font-size: 2.2em;
+  text-align: center;
+}
+
+#testimonials button {
+  background-color: #000;
+}
+
+/* images comparison */
+
+.img-comp-container {
+  width: 25vw;
+}
+
+.results-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  height: 600px;
+}
+
+.img-comp-container {
+  position: relative;
+  height: 100%;
+}
+
+.img-comp-img {
+  position: absolute;
+  height: auto;
+  overflow: hidden;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+  width: 25vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  opacity: 0.7;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.img-comp-slider:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* =========================
+   Responsividade (Bootstrap-like breakpoints)
+   - md: <= 992px
+   - sm: <= 768px
+   - xs: <= 576px
+   ========================= */
+
+/***** Tablet (<= 992px) *****/
+@media (max-width: 992px) {
+  /* Hero */
+  #landscape {
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 0;
+  }
+  #landscape .landscape-content {
+    width: 100% !important;
+    padding: 0 6%;
+    height: auto;
+  }
+  #landscape .building div {
+    height: 50vh;
+    margin-top: 0;
+  }
+
+  /* About us */
+  #about-us {
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 40px 0;
+  }
+  #about-us .about-us-content {
+    width: 100% !important;
+    min-height: auto;
+    margin-right: 0;
+  }
+  #about-us .about-us-content h1 {
+    font-size: 1.8em;
+  }
+
+  /* Step-to-step */
+  #step-to-step-container {
+    width: 100%;
+    padding: 32px 4%;
+  }
+  #step-to-step-container h1 {
+    width: 100%;
+  }
+  #step-to-step {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  /* Nossa trajetória */
+  #our-trajectory {
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 40px 0;
+  }
+  #our-trajectory .our-trajectory-content {
+    width: 100% !important;
+    min-height: auto;
+    margin-right: 0;
+  }
+  #our-trajectory .our-trajectory-content h1 {
+    font-size: 1.8em;
+  }
+
+  /* Benefícios */
+  #benefits { 
+    width: 100%; 
+    padding: 32px 0; 
+  }
+  #benefits-carousel-container { 
+    width: 100%; 
+    padding: 0 4%; 
+  }
+  .carousel-item-content {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .carousel-item-content .card {
+    width: 100% !important;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  /* Depoimentos */
+  #testimonials {
+    padding: 40px 0;
+    gap: 32px;
+  }
+  #testimonials-contents-container {
+    row-gap: 16px;
+  }
+
+  /* Comparativo de imagens */
+  .results_container h1 {
+    font-size: 1.8em;
+  }
+  .results {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .results-container {
+    width: 100%;
+    height: auto;
+  }
+  .img-comp-container {
+    width: 100%;
+    /* manter apenas ajuste de altura */
+    height: 420px;
+  }
+  /* Reverter qualquer override anterior para não quebrar o comparativo */
+  .img-comp-img img {
+    width: 25vw;
+    height: 100%;
+  }
+}
+
+/***** Mobile (<= 768px) *****/
+@media (max-width: 768px) {
+  /* Hero */
+  .landscape-content h1 {
+    font-size: 1.6em;
+  }
+  .landscape-content .logo {
+    width: 130px;
+    height: 44px;
+  }
+  #landscape .building div {
+    height: 40vh;
+  }
+
+  /* About us */
+  .about-us-content {
+    padding: 0 6%;
+  }
+  .about-us-content h1 {
+    font-size: 1.6em;
+  }
+  .about-us-content div {
+    font-size: 0.95em;
+  }
+
+  /* Step-to-step */
+  #step-to-step-container small {
+    font-size: 0.85rem;
+  }
+  #step-to-step-container h1 {
+    font-size: 1.5em;
+  }
+
+  /* Nossa trajetória */
+  .our-trajectory-content {
+    padding: 0 6%;
+  }
+  .our-trajectory-content h1 {
+    font-size: 1.6em;
+  }
+  .our-trajectory-content div {
+    font-size: 0.95em;
+  }
+
+  /* Benefícios */
+  #benefits h1 {
+    font-size: 1.6em;
+  }
+  #benefits-carousel-container [type="button"] {
+    width: 44px;
+  }
+
+  /* Depoimentos */
+  #testimonials H1 {
+    font-size: 1.6em;
+  }
+  #testimonials .card .card-body {
+    padding: 16px;
+  }
+
+  /* Comparativo de imagens */
+  .img-comp-container {
+    height: 360px;
+  }
+  /* Ocultar imagem de paisagem (coluna da direita) no mobile */
+  #landscape .building {
+    display: none;
+  }
+  /* Centralizar títulos no mobile */
+  .landscape-content h1,
+  .about-us-content h1,
+  .our-trajectory-content h1,
+  #benefits h1,
+  #testimonials h1 {
+    text-align: center;
+  }
+}
+
+/***** Pequenos celulares (<= 576px) *****/
+@media (max-width: 576px) {
+  /* Hero */
+  #landscape {
+    padding: 16px 0;
+  }
+  .landscape-content {
+    gap: 12px;
+  }
+  .landscape-content h1 {
+    font-size: 1.35em;
+    word-spacing: normal;
+  }
+  .landscape-content span {
+    font-size: 0.95em;
+  }
+
+  /* About us */
+  .about-us-content h1,
+  .our-trajectory-content h1,
+  #benefits h1,
+  #testimonials h1 {
+    font-size: 1.4em;
+  }
+
+  /* Benefícios - cards ocupam largura total */
+  .carousel-item-content .card {
+    max-width: 100%;
+  }
+
+  /* Depoimentos */
+  #testimonials-contents-container {
+    padding: 0 4%;
+  }
+
+  /* Comparativo de imagens */
+  .results_container h1 {
+    text-align: center;
+  }
+  .results {
+    width: 100%;
+  }
+  .img-comp-container {
+    height: 300px;
+  }
+  .img-comp-slider {
+    width: 32px;
+    height: 32px;
+  }
+  .img-comp-img img {
+    border-radius: 6px;
+  }
+  /* Títulos centralizados também em telas muito pequenas */
+  .landscape-content h1,
+  .about-us-content h1,
+  .our-trajectory-content h1,
+  #benefits h1,
+  #testimonials h1 {
+    text-align: center;
+  }
+}
+
+/* ===== Ajustes mobile adicionais ===== */
+@media (max-width: 768px) {
+  /* Logo do hero ocupa toda a largura */
+  #landscape .landscape-content .logo {
+    width: 100% !important;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Imagens do comparativo com largura maior no mobile */
+  .img-comp-img img {
+    width: 80vw;
+    height: 100%;
+  }
+}

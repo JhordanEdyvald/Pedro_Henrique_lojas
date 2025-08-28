@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+.anim {
+  opacity: 0; /* começa invisível */
+  position: relative; /* precisa disso pro top funcionar */
+  top: 50px;
+}
