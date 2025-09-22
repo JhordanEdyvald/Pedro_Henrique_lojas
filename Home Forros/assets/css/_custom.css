@@ -1,0 +1,74 @@
+:root {
+  /* Cor base */
+  --bs-primary: #6A00A0;
+  --bs-primary-rgb: 239, 101, 16;
+
+  /* Cores para estados interativos */
+  --bs-primary-hover: #5b0067; /* 10% mais escuro */
+  --bs-primary-active: #4d0052; /* 20% mais escuro */
+  --bs-primary-border: var(--bs-primary-hover); /* Mesmo do active */
+  --bs-primary-text: #fff; /* Texto contrastante */
+
+  /* Cores para elementos derivados */
+  --bs-primary-bg-subtle: #fef0e6; /* 90% mais claro */
+  --bs-primary-border-subtle: #fcd9bf; /* 70% mais claro */
+
+  /* Botões */
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: var(--bs-primary-hover);
+  --bs-btn-hover-border-color: var(--bs-primary-hover);
+  --bs-btn-active-bg: var(--bs-primary-active);
+  --bs-btn-active-border-color: var(--bs-primary-active);
+  --bs-btn-disabled-bg: var(--bs-primary);
+  --bs-btn-disabled-border-color: var(--bs-primary);
+
+  /* Links */
+  --bs-link-color: var(--bs-primary);
+  --bs-link-hover-color: var(--bs-primary-hover);
+
+  /* Badges */
+  --bs-badge-bg: var(--bs-primary);
+
+  /* Formulários */
+  --bs-form-valid-border-color: var(--bs-primary);
+  --bs-form-valid-color: var(--bs-primary);
+  --bs-form-check-input-checked-bg-color: var(--bs-primary);
+  --bs-form-check-input-checked-border-color: var(--bs-primary);
+
+  /* Alertas */
+  --bs-alert-color: #664d03; /* Texto escuro para fundo claro */
+  --bs-alert-bg: var(--bs-primary-bg-subtle);
+  --bs-alert-border-color: var(--bs-primary-border-subtle);
+  --bs-alert-link-color: #523e02; /* Cor do link no alerta */
+}
+
+/* Aplica cores em componentes específicos */
+.btn-primary {
+  --bs-btn-color: var(--bs-primary-text);
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: var(--bs-primary-hover);
+  --bs-btn-hover-border-color: var(--bs-primary-hover);
+  --bs-btn-active-bg: var(--bs-primary-active);
+  --bs-btn-active-border-color: var(--bs-primary-active);
+}
+
+.alert-primary {
+  --bs-alert-color: var(--bs-alert-color);
+  --bs-alert-bg: var(--bs-alert-bg);
+  --bs-alert-border-color: var(--bs-alert-border-color);
+  --bs-alert-link-color: var(--bs-alert-link-color);
+}
+
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+
+.border-primary {
+  border-color: var(--bs-primary) !important;
+}

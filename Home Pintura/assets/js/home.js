@@ -8,19 +8,19 @@ $(document).ready(function () {
                 icon: 'bi bi-rulers',
                 title: 'Planejamento sob medida.',
                 description:
-                    'Avaliamos seu espaço e indicamos o melhor tipo de forro (liso ou ripado), garantindo estética moderna e funcionalidade.'
+                    'Avaliamos seu espaço e indicamos o melhor tipo de pintura e cores, garantindo estética moderna e funcionalidade.'
             },
             {
-                icon: 'bi bi-bricks',
+                icon: 'bi bi-brush',
                 title: 'Preparação do ambiente.',
                 description:
-                    'Organizamos tudo para uma instalação limpa e prática, sem quebradeira e sem comprometer o uso do local.'
+                    'Organizamos tudo para uma aplicação limpa e prática, sem bagunça e sem comprometer o uso do local.'
             },
             {
                 icon: 'bi bi-shield-check',
-                title: 'Instalação rápida e segura.',
+                title: 'Pintura rápida e segura.',
                 description:
-                    'Nosso time especializado realiza a montagem com precisão, assegurando resistência, durabilidade e acabamento impecável.'
+                    'Nosso time especializado realiza a aplicação com precisão, assegurando resistência, durabilidade e acabamento impecável.'
             },
             {
                 icon: 'bi bi-stars',

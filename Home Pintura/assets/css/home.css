@@ -14,8 +14,8 @@
 
 .landscape-content .logo {
   width: 150px;
-  height: 50px;
-  object-fit: cover;
+  /* height: 50px; */
+  object-fit: content;
 }
 
 .building div {

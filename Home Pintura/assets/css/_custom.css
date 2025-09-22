@@ -1,17 +1,17 @@
 :root {
   /* Cor base */
-  --bs-primary: #6A00A0;
-  --bs-primary-rgb: 239, 101, 16;
+  --bs-primary: #E91E63;
+  --bs-primary-rgb: 233, 30, 99;
 
   /* Cores para estados interativos */
-  --bs-primary-hover: #5b0067; /* 10% mais escuro */
-  --bs-primary-active: #4d0052; /* 20% mais escuro */
+  --bs-primary-hover: #C2185B; /* 10% mais escuro */
+  --bs-primary-active: #AD1457; /* 20% mais escuro */
   --bs-primary-border: var(--bs-primary-hover); /* Mesmo do active */
   --bs-primary-text: #fff; /* Texto contrastante */
 
   /* Cores para elementos derivados */
-  --bs-primary-bg-subtle: #fef0e6; /* 90% mais claro */
-  --bs-primary-border-subtle: #fcd9bf; /* 70% mais claro */
+  --bs-primary-bg-subtle: #FCE4EC; /* 90% mais claro */
+  --bs-primary-border-subtle: #F8BBD9; /* 70% mais claro */
 
   /* Botões */
   --bs-btn-bg: var(--bs-primary);
