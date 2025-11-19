@@ -1,17 +1,17 @@
 :root {
-  /* Cor base */
-  --bs-primary: #E91E63;
-  --bs-primary-rgb: 233, 30, 99;
+  /* Cor base (Red 500) */
+  --bs-primary: #f44336;
+  --bs-primary-rgb: 244, 67, 54;
 
   /* Cores para estados interativos */
-  --bs-primary-hover: #C2185B; /* 10% mais escuro */
-  --bs-primary-active: #AD1457; /* 20% mais escuro */
-  --bs-primary-border: var(--bs-primary-hover); /* Mesmo do active */
-  --bs-primary-text: #fff; /* Texto contrastante */
+  --bs-primary-hover: #d32f2f; /* ~10% mais escuro */
+  --bs-primary-active: #b71c1c; /* ~20% mais escuro */
+  --bs-primary-border: var(--bs-primary-hover);
+  --bs-primary-text: #fff;
 
   /* Cores para elementos derivados */
-  --bs-primary-bg-subtle: #FCE4EC; /* 90% mais claro */
-  --bs-primary-border-subtle: #F8BBD9; /* 70% mais claro */
+  --bs-primary-bg-subtle: #ffebee; /* ~90% mais claro */
+  --bs-primary-border-subtle: #ffcdd2; /* ~70% mais claro */
 
   /* Botões */
   --bs-btn-bg: var(--bs-primary);
@@ -37,10 +37,10 @@
   --bs-form-check-input-checked-border-color: var(--bs-primary);
 
   /* Alertas */
-  --bs-alert-color: #664d03; /* Texto escuro para fundo claro */
+  --bs-alert-color: #664d03;
   --bs-alert-bg: var(--bs-primary-bg-subtle);
   --bs-alert-border-color: var(--bs-primary-border-subtle);
-  --bs-alert-link-color: #523e02; /* Cor do link no alerta */
+  --bs-alert-link-color: #523e02;
 }
 
 /* Aplica cores em componentes específicos */
