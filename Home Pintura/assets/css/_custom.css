@@ -1,11 +1,11 @@
 :root {
   /* Cor base (Red 500) */
-  --bs-primary: #f44336;
+  --bs-primary: #8d0000;
   --bs-primary-rgb: 244, 67, 54;
 
   /* Cores para estados interativos */
-  --bs-primary-hover: #d32f2f; /* ~10% mais escuro */
-  --bs-primary-active: #b71c1c; /* ~20% mais escuro */
+  --bs-primary-hover: #5a0000; /* ~10% mais escuro */
+  --bs-primary-active: #5e0e0e; /* ~20% mais escuro */
   --bs-primary-border: var(--bs-primary-hover);
   --bs-primary-text: #fff;
 
